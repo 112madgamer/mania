@@ -38,7 +38,7 @@ class TidalClient(Client):
     def __init__(self, config: dict) -> None:
         self._search_count = config["search-count"]
         self._quality = config["quality"]
-
+        print("CustomBuild")
         self._username = config["username"] or input("Tidal username: ")
         self._password = config["password"] or getpass.getpass("Tidal password: ")
 
